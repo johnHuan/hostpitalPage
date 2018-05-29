@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="images/Skins.css"/>
+<link rel="stylesheet" type="text/css" href="images/css.css"/>
+<script type="text/javascript" src="images/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="top">
+	<div class="header wrap">
+    	<p class="tright lh24"><a href="#">学院主页</a> | <a href="#">本站首页</a> | <a href="#">English</a></p>
+    </div>
+    <!--导航-->
+    <div class="wrap">
+        <div class="tab top_dh">
+            <a class="on" href="#">学院主页</a> 
+            <a href="#">本站首页</a> 
+            <a href="#">图书馆概况</a> 
+            <a href="#">图书馆指南</a> 
+            <a href="#">开放时间</a> 
+            <a href="#">规章制度</a> 
+            <a href="#">数字资源</a>
+            <a href="#">参考咨询</a>
+            <a href="#">馆容馆貌</a>
+            <a href="#">联系我们</a>
+            <div class="clear"></div>
+        </div>
+        <div class="contchange bot_dh fwhite">
+        	<ul class="displa">
+            	<li><a href="#">学院主页1</a> </li>
+                <li><a href="#">学院主页1</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页2</a> </li>
+                <li><a href="#">学院主页2</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页3</a> </li>
+                <li><a href="#">学院主页3</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页4</a> </li>
+                <li><a href="#">学院主页4</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页5</a> </li>
+                <li><a href="#">学院主页5</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页6</a> </li>
+                <li><a href="#">学院主页6</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页7</a> </li>
+                <li><a href="#">学院主页7</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页8</a> </li>
+                <li><a href="#">学院主页8</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页9</a> </li>
+                <li><a href="#">学院主页9</a> </li>
+            </ul>
+            <ul>
+            	<li><a href="#">学院主页10</a> </li>
+                <li><a href="#">学院主页10</a> </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--导航 end-->
+    
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+    var bechange = function(tabswitch,curshow) {
+        $(tabswitch).mouseover(function() {
+            $(tabswitch).removeClass();
+            $(this).addClass('on');
+            $(curshow).removeClass();
+            $( curshow +':nth-child(' + ($(tabswitch).index($(this)) + 1) + ')').addClass('displa');
+        });
+    }
+    bechange('.tab a','.contchange>ul');
+
+//在这里可以加入多个的bechange传入两个参数集就可以实现切换的效果
+});//可扩展版
+
+/*
+$(function() {
+    $(".tab a").mouseover(function(e){
+        e.preventDefault();
+        $(this).addClass('on').siblings().removeClass();
+        $(".contchange ul").eq($(".tab a").index(this)).addClass("displa").siblings().removeClass();
+    })//简洁版
+})*/
+</script>
+    <!--内容-->
+    <div class="wrap">
+    	<div class="left lieb_left">
+        	<div class="lieb_tit">
+            	<p>特色资源</p>
+            </div>
+            <div class="liebiao">
+            	<ul>
+                	<li><a href="#">fasdf</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right lieb_rig">
+        	<div class="wzdh">您现在的位置：<a href="#">中医学院</a> > 新闻公告 </div>
+            <div class="fenge"></div>
+            <div class="liebiao_r">
+            	<ul>
+                	<li>
+                    	<span class="left fb color1">[读者服务]</span>
+                        <span class="left ml5"><a href="#">fasdffasfdasdasfasd</a></span>
+                        <span class="right">[2012-02-02]</span>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                    	<span class="left fb color1">[读者服务]</span>
+                        <span class="left ml5"><a href="#">fasdffasfdasdasfasd</a></span>
+                        <span class="right">[2012-02-02]</span>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                    	<span class="left fb color1">[读者服务]</span>
+                        <span class="left ml5"><a href="#">fasdffasfdasdasfasd</a></span>
+                        <span class="right">[2012-02-02]</span>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                    	<span class="left fb color1">[读者服务]</span>
+                        <span class="left ml5"><a href="#">fasdffasfdasdasfasd</a></span>
+                        <span class="right">[2012-02-02]</span>
+                        <span class="clear"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--内容 end-->
+    <div class="blank10"></div>
+    <!--友情链接-->
+    <div class="wrap yqlj">
+    	<strong>友情链接</strong>
+        <div>
+        	<span><a href="#" target="_blank">友情链接</a></span>
+            <span><a href="#" target="_blank">友情链接</a></span>
+        </div>
+    </div>
+    <!--友情链接 end-->
+    <div class="blank10"></div>
+    <!--尾部-->
+    <div class="center wiebu">
+    	甘肃中医学院图书馆 版权所有 <br />
+Copyright © 2008 - 2011 www.gszy.edu.cn/tsg/ All Rights Reserved
+    </div>
+    <!--尾部 end-->
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
